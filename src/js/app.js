@@ -1,9 +1,50 @@
-import { isWebp, headerFixed }from './modules'
+import {
+    isWebp,
+    headerFixed
+} from './modules'
 /* Раскомментировать для использования */
 // import { MousePRLX } from './libs/parallaxMouse'
 
-/* Раскомментировать для использования */
-// import Swiper, { Navigation, Pagination } from 'swiper'
+
+import Swiper, {
+    Navigation,
+    Pagination
+
+} from 'swiper'
+
+const swiper = new Swiper('.swiper', {
+
+    spaceBetween: 10,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Проверка браузера на поддерку .webp изображений ====================================================================================================================================================
 isWebp()

@@ -14,6 +14,7 @@ $blackColor: #131313;
 $title-color: #29282d;
 $grayColor: #6f6f6f;
 $redColor: #ff4040;
+$bg: #e7e7e7;
 $accent-color: #fe3e57;
 $firstAccentColor: $blackColor;
 $secondAccentColor: $redColor;
@@ -34,3 +35,28 @@ $lightBoxShadow:  0 0 2px 0 rgba(#000, 10%),
 $hoverBoxShadow:  0 0 5px 0 rgba(#000, 10%), 
                   0 0 10px 0 rgba(#000, 10%), 
                   0 0 15px 0 rgba(#000, 10%);
+
+                  .title {
+                    text-align: center;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 65px;
+                    color: $title-color;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                  }
+
+                  .text {
+                    text-align: center;
+                         max-width: 570px;
+                      margin: 0 auto 55px;
+                      color: $default-color;
+                  }
+
+                  .btn {
+                    background-color: $accent-color;
+                              color: #fff;
+                             text-transform: uppercase;
+        
+                             padding: 14px 35px;
+                  }

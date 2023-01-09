@@ -1,7 +1,9 @@
 @use 'sass:math';
 
 // Подключение шрифтов из папки "./src/fonts" =======================================================================================================================
-@import 'config/fonts';
+
+
+
 
 
 // Подключение sass функций и миксинов =======================================================================================================================
@@ -209,5 +211,248 @@
     }
 }
 
+/* Swiper slider */
+
+.top-slider {
+    background-image: url(/images/bg-header.png);
+    background-size: cover;
+    padding-bottom: 44px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    padding: 65px 0 45px;
+
+    &__title {
+        max-width: 670px;
+        font-family: $mainFontFamily;
+        color: $blackColor;
+        font-size: 58px;
+        line-height: 68px;
+        margin-bottom: 35px;
+    }
+
+    &__content {
+        padding-left: 175px;
+        padding-top: 125px;
+    }
+
+    &__item {
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+    &__text {
+        margin-bottom: 55px;
+        max-width: 470px;
+    }
+
+    &__link {
+        background-color: $accent-color;
+        color: #fff;
+        text-transform: uppercase;
+        
+        padding: 14px 35px;
+    }
+
+    &__container {
+        max-width: 1560px;
+    }
+    
+}
+
+
+.categories-info {
+    padding: 120px 0;
+    
+   
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+
+    }
+
+    &::before {
+        background-image: url(/images/content/after-bg.svg);
+       top: -40px;
+       left: -45px;
+       width: 119px;
+       height: 121px;
+
+    }
+
+    &::after {
+    bottom: -23px;
+    right: -25px;
+    background-image: url(/images/content/before-bg.svg);
+    width: 120px;
+    height: 121px;
+    background-repeat: no-repeat;
+    
+    }
+   
+
+    &__item {
+        position: relative;
+          background-color: #fff;
+        padding: 60px 30px;
+        width: 370px;
+        box-shadow: 20px 0px 60px 0px rgba(255, 248, 248, 0.3);
+    }
+
+    &__item-title {
+        margin: 35px 0 10px;
+        color: $title-color;
+        font-size: 22px;
+    }
+
+    &__item-text {
+        color: $default-color;
+        
+    }
+}
+
+.categories {
+    &__items {
+        display: grid;
+        min-height: 635px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    
+    &__item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 35px;
+        padding-left: 40px;
+
+        &:nth-child(1) {
+            grid-row: span 2;
+            .categories__item-subtitle {
+                color: #5800e4;
+            }
+            .categories__link:hover {
+                color: #5800e4;
+            }
+        }
+
+        &:nth-child(2) {
+            grid-column: span 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 0;
+            .categories__item-subtitle {
+                color: $accent-color;
+            }
+            .categories__link:hover {
+                color: $accent-color;
+            }
+        }
+
+        &:nth-child(3) {
+           
+            .categories__item-subtitle {
+                color: #ffb534;
+            }
+            .categories__link:hover {
+                color: #ffb534;
+            }
+        }
+
+        &:nth-child(4) {
+           
+            .categories__item-subtitle {
+                color: #34c3ff;
+            }
+            .categories__link:hover {
+                color: #34c3ff;
+            }
+        }
+
+    }
+    &__item-subtitle {
+        
+        margin-bottom: 5px;
+    }
+
+    &__item-title {
+        font-size: 22px;
+        color: $title-color;
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: $title-color;
+        transition: all .3s ;
+    }
+}
+
+
+
+.video-fashion {
+    background-color: $bg;
+    padding: 125px 0;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__popup {
+        margin-right: 60px;
+        max-width: 530px;
+        height: 480px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__subtitle {
+        color: $accent-color;
+        font-size: 22px;
+        padding-top: 75px;
+        margin-bottom: 5px;
+       
+        
+    }
+
+    &__text {
+        color: $default-color;
+        margin-bottom: 55px;
+    }
+
+    
+    &__content {
+          max-width: 570px;
+    }
+
+    &__title {
+        text-align: left;
+    }
+
+   
+}
+
+
+
+
+  
+
+  
 
 
