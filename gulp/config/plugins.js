@@ -5,11 +5,14 @@ import browserSync from 'browser-sync' // Локальный сервер
 import newer from 'gulp-newer' // Проверка обновления
 import ifPlugin from 'gulp-if' // Условное ветление
 
+
+
 export const plugins = {
   replace: replace,
   plumber: plumber,
   notify: notify,
   browserSync: browserSync,
   newer: newer,
-  if: ifPlugin
+  if: ifPlugin,
+
 }

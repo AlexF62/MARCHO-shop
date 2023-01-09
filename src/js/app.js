@@ -6,6 +6,9 @@ import {
 // import { MousePRLX } from './libs/parallaxMouse'
 
 
+
+
+
 import Swiper, {
     Navigation,
     Pagination
@@ -30,6 +33,20 @@ const swiper = new Swiper('.swiper', {
     },
 
 });
+
+
+
+
+$(function () {
+
+    $(".star").rateYo({
+        rating: 3.6
+    });
+
+});
+
+
+
 
 
 

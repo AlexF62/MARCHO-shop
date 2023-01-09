@@ -67,6 +67,7 @@
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^5.1.0",
     "jquery": "^3.6.3",
+    "rateyo": "^2.3.2",
     "sass": "^1.45.1",
     "swiper": "^7.3.4",
     "vinyl-ftp": "^0.6.1",
